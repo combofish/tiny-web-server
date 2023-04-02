@@ -1,0 +1,8 @@
+
+src=calc.cpp main.cpp
+target=app
+
+$(target):$(src)
+	$(CXX) $(src) -o $(target)
+
+

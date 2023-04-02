@@ -1,0 +1,2 @@
+app: main.cpp calc.cpp
+	g++ main.cpp calc.cpp -o app

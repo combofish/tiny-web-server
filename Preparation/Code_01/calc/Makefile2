@@ -1,0 +1,9 @@
+app: calc.o main.o
+	g++ calc.o main.o -o app
+
+calc.o: calc.cpp
+	g++ -c calc.cpp -o calc.o
+
+main.o: main.cpp
+	g++ -c main.cpp -o main.o
+
