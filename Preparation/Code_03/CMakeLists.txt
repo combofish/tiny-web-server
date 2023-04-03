@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(Tiny_Web_Server_CPP)
-
-set(CMAKE_BUILD_TYPE DEBUG)
+#project(Tiny_Web_Server_CPP)
+#set(CMAKE_BUILD_TYPE DEBUG)
 
 # set(CMAKE_C_FLAGS "-lpthread")
 
-find_package(Threads REQUIRED)
 
 include_directories(.)
+
+find_package(Threads REQUIRED)
 
 #add_executable(pthread_create pthread_create.c)
 #target_link_libraries(pthread_create PRIVATE Threads::Threads)
@@ -27,6 +27,27 @@ include_directories(.)
 #
 #add_executable(pthread_attr pthread_attr.c)
 #target_link_libraries(pthread_attr PRIVATE Threads::Threads)
+#
+#add_executable(sell_tickets sell_tickets.c)
+#target_link_libraries(sell_tickets PRIVATE Threads::Threads)
+#
+#add_executable(mutex mutex.c)
+#target_link_libraries(mutex PRIVATE Threads::Threads)
+#
+#add_executable(dead_lock dead_lock.c)
+#target_link_libraries(dead_lock PRIVATE Threads::Threads)
+#
+#add_executable(dead_lock_ii dead_lock_ii.c)
+#target_link_libraries(dead_lock_ii PRIVATE Threads::Threads)
+#
+#add_executable(rwlock rwlock.c)
+#target_link_libraries(rwlock PRIVATE Threads::Threads)
+#
+#add_executable(producer_customer producer_customer.c)
+#target_link_libraries(producer_customer PRIVATE Threads::Threads)
 
-add_executable(sell_tickets sell_tickets.c)
-target_link_libraries(sell_tickets PRIVATE Threads::Threads)
+add_executable(cond cond.c)
+target_link_libraries(cond PRIVATE Threads::Threads)
+
+add_executable(semaphore semaphore.c)
+target_link_libraries(semaphore PRIVATE Threads::Threads)
