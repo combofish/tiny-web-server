@@ -45,9 +45,9 @@ find_package(Threads REQUIRED)
 #
 #add_executable(producer_customer producer_customer.c)
 #target_link_libraries(producer_customer PRIVATE Threads::Threads)
-
-add_executable(cond cond.c)
-target_link_libraries(cond PRIVATE Threads::Threads)
-
-add_executable(semaphore semaphore.c)
-target_link_libraries(semaphore PRIVATE Threads::Threads)
+#
+#add_executable(cond cond.c)
+#target_link_libraries(cond PRIVATE Threads::Threads)
+#
+#add_executable(semaphore semaphore.c)
+#target_link_libraries(semaphore PRIVATE Threads::Threads)

@@ -8,6 +8,8 @@ cmake-build-debug
 
 */.idea/
 */cmake-build-debug/
+cmake-build-debug-clang/
+cmake-build-release/
 
 # Prerequisites
 *.d

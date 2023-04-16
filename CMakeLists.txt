@@ -4,4 +4,7 @@ project(Tiny_Web_Server)
 
 set(CMAKE_BUILD_TYPE DEBUG)
 
-add_subdirectory(Preparation/Code_03)
+#add_subdirectory(Preparation/Code_03)
+#add_subdirectory(Preparation/Code_04)
+
+find_package(Threads REQUIRED)
