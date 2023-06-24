@@ -22,7 +22,7 @@ int main() {
     struct sockaddr_in sin;
     memset(&sin, 0, sizeof(sin));
     sin.sin_family = AF_INET;
-    sin.sin_port = htons(8000);
+    sin.sin_port = htons(8888);
     inet_pton(AF_INET, "127.0.0.1", &sin.sin_addr.s_addr);
 
     // sin.sin_addr.s_addr = INADDR_ANY;

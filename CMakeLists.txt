@@ -58,3 +58,13 @@ add_executable(test_fileno Learn/fileno/test_fileno.cpp)
 # find_package(Libevent REQUIRED)
 add_executable(test_event Learn/event/test_event.cpp)
 target_link_libraries(test_event event)
+
+add_executable(event_read_fifo Learn/event_2_read_fifo/event_read_fifo.cpp)
+target_link_libraries(event_read_fifo event)
+add_executable(write_to_fifo Learn/event_2_read_fifo/write_to_fifo.cpp)
+
+add_executable(event_sign Learn/event_3_sign/event_sign.cpp)
+target_link_libraries(event_sign event)
+
+add_executable(event_srv Learn/event_4_srv/event_srv.cpp)
+target_link_libraries(event_srv event)
